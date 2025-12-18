@@ -9,7 +9,7 @@ The official landing page for Ekilie, showcasing our suite of advanced digital s
 
 ## About Ekilie
 
-Ekilie is a modern digital platform focused on pioneering innovative solutions that shape the future of technology. We specialize in developing cutting-edge products that transform how organizations interact with digital infrastructure.
+Ekilie is a software engineer and systems development company pioneering innovative solutions that shape the future of technology. We specialize in developing cutting-edge products and systems that transform how organizations interact with digital infrastructure.
 
 ## Our Solutions
 

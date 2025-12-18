@@ -48,15 +48,15 @@ export default function Hero() {
             >
             </HoverBorderGradient> */}
               <span className="px-3 py-1 text-sm border border-border rounded-full bg-card">
-                Digital Innovation
+                Software Engineering & Systems Development
               </span>
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/10 dark:from-sky-100/10 to-foreground bg-clip-text text-transparent">
-              Building the Future
+              Engineering Excellence, Building Tomorrow
             </h1>
 
             <p className="max-w-2xl text-lg text-muted-foreground">
-              Ekilie creates smart digital solutions that empower tomorrow.
+              Ekilie is a software engineer and systems development company that creates innovative digital solutions for modern businesses.
             </p>
 
             {/* Buttons + Modal */}
@@ -93,12 +93,11 @@ export default function Hero() {
       <Modal isOpen={isOpen} placement="center" onOpenChange={onOpenChange}>
         <ModalContent>
           <ModalHeader className="text-xl font-semibold">
-            Our Solutions
+            Our Engineering Solutions
           </ModalHeader>
           <ModalBody>
             <p className="text-muted-foreground">
-              Ekilie delivers smart platforms for sensing, communication, and
-              insights.
+              As a software engineering and systems development company, Ekilie delivers cutting-edge platforms for sensing, communication, analytics, and intelligent automation.
             </p>
           </ModalBody>
           <ModalFooter>

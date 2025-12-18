@@ -25,11 +25,10 @@ export default function Products() {
           className="text-center mb-20 flex flex-col gap-3"
         >
           <h2 className="text-3xl font-semibold sm:text-4xl bg-gradient-to-b from-foreground to-muted-foreground text-transparent bg-clip-text">
-            Our Digital Solutions
+            Our Engineering Solutions
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground text-center">
-            Discover our suite of innovative products designed to transform
-            tomorrow&apos;s technology.
+            Expertly crafted software systems and platforms designed to power your digital transformation.
           </p>
         </motion.div>
 

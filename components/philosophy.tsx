@@ -21,15 +21,15 @@ export function Philosophy() {
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
             icon={<Box className="h-4 w-4  dark:text-neutral-400" />}
-            title="Empowering Creators"
-            description="Ekilie is built to help you create, collaborate, and innovate with ease—no matter your background or experience."
+            title="Engineering Excellence"
+            description="We deliver robust, scalable software solutions built with precision and attention to detail—transforming complex challenges into elegant systems."
           />
 
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
             icon={<Settings className="h-4 w-4  dark:text-neutral-400" />}
-            title="Seamless Customization"
-            description="Personalize your workflow and interface. Ekilie adapts to your needs, so you can focus on what matters most."
+            title="Systems Thinking"
+            description="Our holistic approach to systems development ensures seamless integration, optimal performance, and long-term maintainability."
           />
 
           <GridItem
@@ -49,8 +49,8 @@ export function Philosophy() {
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
             icon={<Search className="h-4 w-4  dark:text-neutral-400" />}
-            title="Always Improving"
-            description="We listen, learn, and evolve. Ekilie grows with you, bringing new features and enhancements regularly."
+            title="Continuous Innovation"
+            description="We stay ahead of the curve with cutting-edge technologies and methodologies, continuously improving our systems and solutions."
           />
         </ul>
       </div>
