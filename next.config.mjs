@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
+    // Temporarily ignore ESLint errors during builds due to third-party component issues
+    // TODO: Fix or replace components/ui/hover-border-gradient.tsx
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has type errors.
+    // Temporarily ignore TypeScript errors during builds due to type issues in 
+    // third-party UI component (hover-border-gradient.tsx)
+    // TODO: Fix type definitions or replace the component
     ignoreBuildErrors: true,
   },
 };

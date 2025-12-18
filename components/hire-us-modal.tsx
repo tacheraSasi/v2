@@ -8,8 +8,7 @@ import {
   ModalFooter,
 } from "@heroui/modal";
 import { Button } from "@heroui/button";
-import { Input } from "@heroui/input";
-import { Textarea } from "@heroui/input";
+import { Input, Textarea } from "@heroui/input";
 import { Select, SelectItem } from "@heroui/select";
 
 interface HireUsModalProps {
@@ -40,7 +39,10 @@ export default function HireUsModal({ isOpen, onOpenChange }: HireUsModalProps) 
   const handleSubmit = async () => {
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // TODO: Replace with actual API call to submit form data
+    // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
+    
+    // Simulating form submission for demo purposes
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus("success");
@@ -64,7 +66,17 @@ export default function HireUsModal({ isOpen, onOpenChange }: HireUsModalProps) 
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  const isFormValid = formData.name && formData.email && formData.service && formData.message;
+  const isEmailValid = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const isFormValid = 
+    formData.name.trim() && 
+    formData.email.trim() && 
+    isEmailValid(formData.email) &&
+    formData.service && 
+    formData.message.trim();
 
   return (
     <Modal 
@@ -110,6 +122,8 @@ export default function HireUsModal({ isOpen, onOpenChange }: HireUsModalProps) 
                 isRequired
                 variant="bordered"
                 labelPlacement="outside"
+                isInvalid={formData.email.length > 0 && !isEmailValid(formData.email)}
+                errorMessage={formData.email.length > 0 && !isEmailValid(formData.email) ? "Please enter a valid email address" : ""}
               />
               <Input
                 label="Company / Organization"
