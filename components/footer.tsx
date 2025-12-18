@@ -8,15 +8,15 @@ const Footer = () => {
         <TextHoverEffect text="EKILIE" />
       </div>
       <h5 className="font-medium bg-gradient-to-b from-foreground to-muted-foreground text-transparent bg-clip-text">
-        #InnovatingTheFuture
+        #EngineeringTheFuture
       </h5>
 
       <div className="text-center">
         <p className="text-sm text-muted-foreground mb-2">
-          © 2025 Ekilie. Pioneering digital innovation.
+          © 2025 Ekilie. Software Engineering & Systems Development Company.
         </p>
         <p className="text-xs text-muted-foreground">
-          Shaping tomorrow&apos;s technology today.
+          Building innovative systems for tomorrow&apos;s technology.
         </p>
       </div>
     </footer>

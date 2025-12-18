@@ -11,6 +11,8 @@ import {
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import ThemeSwitcher from "@/components/theme-switcher";
+import HireUsModal from "@/components/hire-us-modal";
+import { useDisclosure } from "@heroui/use-disclosure";
 import {
   Dropdown,
   DropdownTrigger,
@@ -25,6 +27,8 @@ import {
 } from "@radix-ui/react-icons";
 
 export default function NavBar() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  
   const menuItems = [
     { name: "Products", href: "#products" },
     { name: "Testimonials", href: "#testimonials" },
@@ -117,14 +121,13 @@ export default function NavBar() {
       <NavbarContent justify="end">
         <NavbarItem className="hidden sm:flex">
           <Button
-            as={Link}
+            onPress={onOpen}
             color="primary"
-            href="#contact"
             variant="solid"
             className="hidden sm:flex"
             size="sm"
           >
-            Get Started
+            Hire Us
           </Button>
         </NavbarItem>
         <NavbarItem>
@@ -144,7 +147,20 @@ export default function NavBar() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarMenuItem>
+          <Button
+            onPress={onOpen}
+            color="primary"
+            variant="solid"
+            className="w-full"
+            size="lg"
+          >
+            Hire Us
+          </Button>
+        </NavbarMenuItem>
       </NavbarMenu>
+      
+      <HireUsModal isOpen={isOpen} onOpenChange={onOpenChange} />
     </Navbar>
   );
 }
